@@ -7,7 +7,7 @@ app = Flask(__name__)
 server = 'nanditha13.database.windows.net'   # Always append .database.windows.net
 database = 'nan'
 username = 'nanditha'
-password = 'Nanditha@1314'
+password = 'chethu@1314'
 driver = '{ODBC Driver 17 for SQL Server}'   # Make sure ODBC Driver 17+ is installed
 
 # 🔹 Establish connection
