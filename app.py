@@ -9,6 +9,33 @@ database = 'nan'
 username = 'nanditha'
 password = 'chethu@1314'
 driver = '{ODBC Driver 17 for SQL Server}'   # Make sure ODBC Driver 17+ is installed
+conn_str = (
+    "Driver={ODBC Driver 17 for SQL Server};"
+    "Server=tcp:nanditha13.database.windows.net,1433;"
+    "Database=nan;"
+    "Uid=nanditha;"
+    "Pwd=Nanditha@1314;"
+    "Encrypt=yes;"
+    "TrustServerCertificate=no;"
+    "Connection Timeout=30;"
+)
+
+try:
+    conn = pyodbc.connect(conn_str)
+    print("✅ Connected to Azure SQL successfully!")
+except Exception as e:
+    print("❌ Connection failed:", e)
+👉 Right now, since your public network access is disabled, your connection will fail.
+Would you like me to give you the exact steps (with screenshots) to turn on Allow Azure services and Add client IP so your connection works?
+
+
+
+
+
+
+
+
+Ask ChatGPT
 
 # 🔹 Establish connection
 def get_db_connection():
